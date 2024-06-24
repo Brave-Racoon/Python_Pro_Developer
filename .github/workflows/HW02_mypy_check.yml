@@ -21,4 +21,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Run mypy
-      run: mypy --ignore-missing-imports basic.py intermediate.py
+      run: mypy --ignore-missing-imports ./homework_02/basic.py ./homework_02/intermediate.py
