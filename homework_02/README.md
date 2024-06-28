@@ -18,4 +18,5 @@ typing  в контейнере запускалась бы аналогична
 ![Image](B_and_I.jpg)
 
 Проверка локально: mypy basic.py intermediate.py
+
 Проверка в контейнере: docker run --rm -v $(PWD)/homework_02 hw02_image mypy basic.py intermediate.py
