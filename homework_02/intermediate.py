@@ -80,7 +80,7 @@ def literal_func(arg1: Literal['left', 'right']):
 
 def literalstring_func(sql: LiteralString, parameters: Iterable[str] = ...):
     # Annotate a function `execute_query` which runs SQL, but also can prevent SQL injection attacks.
-    ...
+    ...  # like pass op
 
 
 class Foo3:
@@ -128,8 +128,8 @@ class Person(TypedDict, total=False):
 class Person2(TypedDict):
     name: str
     age: int
-    # expects two keyword arguments - `name` of type `str`, and `age` of type `int`.
 
 
-def unpack_func(**arg: Unpack[Person]):
+def unpack_func(**arg: Unpack[Person2]):
+    # expects two keyword arguments - `name` of type `str`, and `age` of type `int`
     return arg

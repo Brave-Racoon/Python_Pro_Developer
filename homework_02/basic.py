@@ -12,7 +12,7 @@ from typing import Final, List, Tuple, TypeAlias, Union
 # Python 3.11
 Vector: TypeAlias = list[float]
 
-# `a` should be an integer
+# `a` should be an integer - see last challenge "variable"
 a: int
 
 
