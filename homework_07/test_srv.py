@@ -1,5 +1,5 @@
 # usage: pytest test_srv.py
-# testing:
+# load testing:
 # sh ab -n 1000 -c 10 http://localhost:8080/index.html
 # wrk -t12 -c400 -d30s http://localhost:8080/index.html
 
@@ -8,26 +8,21 @@ import requests
 import threading
 import time
 
-from web_srv import start_server, HOST, PORT, TEST_HOST, TEST_PORT
+from web_srv import start_server, HOST, PORT
 
 
 @pytest.fixture(scope='module')
 def server():
     server_thread = threading.Thread(target=start_server)
     server_thread.start()
-    time.sleep(1)  # give the server some time to start
+    time.sleep(1)  # start delay
     yield
     # no need to stop the server as pytest will terminate the process
 
 
 def test_index_page(server):
     response = requests.get(f'http://{HOST}:{PORT}/')
-    #response = requests.get(f'http://localhost:8080/')
-    #print(response)
-    #print(response.text)
     assert response.status_code == 200
-    #print(response.links)
-    #assert '!DOCTYPE html' in response.text
     assert 'index.html' in response.text
 
 

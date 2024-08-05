@@ -2,11 +2,9 @@ import socket
 import threading
 import os
 
-#HOST = '192.168.1.43'
 HOST = '127.0.0.1'
 PORT = 8090
-TEST_HOST = 'localhost'
-TEST_PORT = 8090
+
 DOCUMENT_ROOT = './www'  # root folder for static files
 
 
@@ -49,7 +47,7 @@ def start_server():
 
     while True:
         client_socket, addr = server_socket.accept()
-        print(f'Connection from {addr[0]}:{addr[1]}')
+        # print(f'Connection from {addr[0]}:{addr[1]}')
         threading.Thread(target=handle_request, args=(client_socket,)).start()
 
 
