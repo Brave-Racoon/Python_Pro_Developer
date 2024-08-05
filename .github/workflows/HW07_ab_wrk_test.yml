@@ -36,7 +36,7 @@ jobs:
         pytest test_srv.py
 
     - name: Run ab test
-      run: ab -n 1000 -c 10 http://127.0.0.1:8080/index.html
+      run: ab -n 1000 -c 10 http://127.0.0.1:8090/index.html
 
     - name: Run wrk test
-      run: wrk -t12 -c400 -d30s http://127.0.0.1:8080/index.html
+      run: wrk -t12 -c400 -d30s http://127.0.0.1:8090/index.html
