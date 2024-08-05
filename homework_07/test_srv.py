@@ -23,8 +23,8 @@ def server():
 def test_index_page(server):
     response = requests.get(f'http://{HOST}:{PORT}/')
     #response = requests.get(f'http://localhost:8080/')
-    print(response)
-    print(response.text)
+    #print(response)
+    #print(response.text)
     assert response.status_code == 200
     #print(response.links)
     #assert '!DOCTYPE html' in response.text
