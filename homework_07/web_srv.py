@@ -3,7 +3,7 @@ import threading
 import os
 
 #HOST = '192.168.1.43'
-HOST = 'localhost'
+HOST = '127.0.0.1'
 PORT = 8090
 TEST_HOST = 'localhost'
 TEST_PORT = 8090
