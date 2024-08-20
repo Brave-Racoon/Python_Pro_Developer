@@ -23,5 +23,5 @@ jobs:
     - name: Analysing code with pylint and black
       run: |
         # pylint $(git ls-files '*.py')
-        pylint ./homework_08/mysite/*.py
+        pylint ./homework_08/mysite/mysite
         black ./mysite
