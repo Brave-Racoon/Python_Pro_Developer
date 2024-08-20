@@ -1,0 +1,42 @@
+name: Test Web Server
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./homework_07
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        sudo apt-get update
+        sudo apt-get install apache2-utils wrk
+
+    - name: Run pytest tests
+      run: |
+        python web_srv.py &
+        sleep 1
+        pytest test_srv.py
+
+    - name: Run ab test
+      run: ab -n 1000 -c 10 http://127.0.0.1:8090/index.html
+
+    - name: Run wrk test
+      run: wrk -t12 -c400 -d30s http://127.0.0.1:8090/index.html
