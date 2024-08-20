@@ -12,7 +12,8 @@
 7. Port binding - Uvicorn/Gunicorn port bound:
 ![Главная страница](mysite_1.png "Главная страница")
 
-8/9. Concurrency / Disposability - Gunicorn workers/signals
+8. Concurrency  - Gunicorn workers/signals
+9. Disposability - Gunicorn workers/signals
 10. Dev/prod parity - посредством разделения на контейнеры BD и app
 11. Logs - задействован Django logging
 12. Admin processes - Django admin tools [manage.py]
