@@ -1,0 +1,5 @@
+**/mysite/mysite/settings/settings.old
+**/mysite/mysite/settings/settings_dev.py
+**docs/
+**db.sqlite3
+**/__pycache__
