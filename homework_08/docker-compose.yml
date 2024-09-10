@@ -1,0 +1,58 @@
+
+services:
+  pg:
+    image: postgres
+    environment:
+      POSTGRES_DB: homework_08
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: example
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d homework_08 -U user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+#  adminer:
+#      image:  adminer
+#      ports:
+#        - "8081:8080"
+
+  web:
+    #image: mysite:latest
+    image: mysite
+    environment:
+        - POSTGRES_HOST=pg
+        - POSTGRES_PORT=5432
+        - POSTGRES_USER=user
+        - POSTGRES_PASSWORD=example
+        - POSTGRES_DB=homework_08
+        - DJANGO_SECRET_KEY=django-insecure-t#7@h@4g6ot6cx3a&+64him)(l77ad-(z^-qkgs58icim3&4r+
+        - DJANGO_ENV=Staging
+        - DJANGO_SETTINGS_MODULE=mysite.settings.settings_prod
+#    command:
+#      - runserver
+#      - "0.0.0.0:8000"
+#    ports:
+#      - "8000:8000"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: gunicorn
+    command:
+        - "mysite.asgi:application"
+        - "-b 0.0.0.0:8000"
+        - "-k uvicorn.workers.UvicornWorker"
+    ports:
+        - "8000:8000"
+    depends_on:
+      pg:
+       condition: service_healthy
+
+
+volumes:
+  db-data:
