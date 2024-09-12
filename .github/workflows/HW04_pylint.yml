@@ -23,5 +23,5 @@ jobs:
     - name: Analysing the code with pylint and black and testing:
       run: |
         pylint --disable=C0103,C0114,C0116,C0115 api.py
-	black api.py  
- 	pytest test.py
+        black api.py  
+        pytest test.py
