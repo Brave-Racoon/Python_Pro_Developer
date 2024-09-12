@@ -22,7 +22,7 @@ jobs:
         pip install pytest
     - name: Analysing the code with pylint and black and testing
       run: |
-        pylint --disable=C0103,C0114,C0116,C0115 ./api/api.py
-        black ./api/api.py
-        pytest ./api/test.py
+        pylint --disable=C0103,C0114,C0116,C0115 ./homework_04/api/api.py
+        black ./homework_04/api/api.py
+        pytest ./homework_04/api/test.py
         
