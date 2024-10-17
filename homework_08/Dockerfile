@@ -12,3 +12,4 @@ COPY ./mysite .
 
 RUN python manage.py collectstatic --no-input
 
+#ENTRYPOINT [ "python", "manage.py" ]

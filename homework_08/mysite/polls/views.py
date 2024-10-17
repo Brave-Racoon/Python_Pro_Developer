@@ -9,4 +9,4 @@ def index(request):
 
 
 def home(request):
-    return render(request, "polls/home.html")
+    return render(request, 'polls/home.html')
