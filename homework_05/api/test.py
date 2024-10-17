@@ -10,13 +10,28 @@ import api
 import cache
 
 
+#def cases(cases):
+#    def decorator(f):
+#        @functools.wraps(f)
+#        def wrapper(*args):
+#            for c in cases:
+#                new_args = args + (c if isinstance(c, tuple) else (c,))
+#                f(*new_args)
+#
+#        return wrapper
+#
+#    return decorator
+
 def cases(cases):
     def decorator(f):
         @functools.wraps(f)
         def wrapper(*args):
             for c in cases:
                 new_args = args + (c if isinstance(c, tuple) else (c,))
-                f(*new_args)
+                try:
+                    f(*new_args)
+                except AssertionError as e:
+                    raise AssertionError(f"Failed for case: {c}\nOriginal error: {e}")
 
         return wrapper
 
