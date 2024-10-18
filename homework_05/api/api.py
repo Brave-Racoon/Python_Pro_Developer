@@ -258,7 +258,7 @@ def check_auth(request):
         digest = hashlib.sha512(
             bytes(request.account + request.login + SALT, "utf-8")
         ).hexdigest()
-    print(digest) # show calculated token for debug purposes only
+    #print(digest) # show calculated token for debug purposes only
     return digest == request.token
 
 
