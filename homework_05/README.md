@@ -21,7 +21,7 @@
 5. Структура тестов https://realpython.com/python-testing/#writing-integration-tests
 
 ***
-### Тесты:
+### Тесты (папка ./api/tests/ ):
 * функциональные pytest test.py
 * Взаимодействия с redis-сервером в эмуляции через fakeredis - pytest test_server_emulation.py
 * Взаимодействия с реальным redis-сервером в Docker - pytest test_server_real.py
