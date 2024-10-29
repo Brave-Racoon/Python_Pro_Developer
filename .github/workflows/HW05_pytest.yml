@@ -21,5 +21,5 @@ jobs:
         pip install -r ./homework_05/requirements.txt
     - name: Testing workout
       run: |
-        pytest ./homework_05/api/tests/unit/test.py
-        pytest ./homework_05/api/tests/integration/test_server_emulation.py	
+        pytest api/tests/unit/test.py
+        pytest api/tests/integration/test_server_emulation.py	
