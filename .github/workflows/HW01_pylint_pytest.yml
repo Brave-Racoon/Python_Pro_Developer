@@ -25,4 +25,4 @@ jobs:
       run: |
         pylint --disable=C0103,C0114,C0116,C0115 --fail-under=7 ./homework_01/log_interpreter.py
         black ./homework_01/log_interpreter.py
-        pytest -v ./homework_01/log_interpreter.py
+        pytest -v ./homework_01/tests/test_log_parser.py
