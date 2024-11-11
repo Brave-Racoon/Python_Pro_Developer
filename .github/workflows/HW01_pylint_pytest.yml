@@ -1,4 +1,4 @@
-name: Pylint
+name: HW01 Pylint/pytest workflow
 
 on: [push]
 
@@ -20,6 +20,7 @@ jobs:
         pip install -r ./homework_01/requirements.txt
         pip install black
         pip install pylint
+        pip install pytest
     - name: Analysing code with pylint and black
       run: |
         pylint --disable=C0103,C0114,C0116,C0115 --fail-under=7 ./homework_01/log_interpreter.py
