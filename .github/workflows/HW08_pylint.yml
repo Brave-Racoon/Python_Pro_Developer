@@ -24,4 +24,5 @@ jobs:
       run: |
         # pylint $(git ls-files '*.py')
         pylint ./mysite
-	black ./mysite
+        black ./mysite
+	
