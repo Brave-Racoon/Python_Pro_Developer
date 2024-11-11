@@ -20,7 +20,7 @@ jobs:
         pip install -r requirements.txt
         pip install black
         pip install pylint
-    - name: Analysing the code with pylint and black:
+    - name: Analysing the code with pylint and black
       run: |
         # pylint $(git ls-files '*.py')
         pylint ./mysite
