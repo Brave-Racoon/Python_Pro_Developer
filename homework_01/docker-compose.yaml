@@ -4,7 +4,4 @@ services:
     volumes:
       - ./logs:/app/logs
       - ./reports:/app/reports
-    environment:
-      - LOG_DIR=/app/logs
-      - REPORT_DIR=/app/reports
     command: ["python", "log_interpreter.py"]
