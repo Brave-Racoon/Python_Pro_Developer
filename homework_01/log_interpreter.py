@@ -85,10 +85,7 @@ def get_requests_lex(log, errors_level: float, entry):
     :param entry: field names class
     :return: dictionary with urls and stat
     """
-    if log.ext == ".gz":
-        data = gzip.open(log.path.absolute(), mode="rt")
-    else:
-        data = log.path.open()
+    data = gzip.open(log.path.absolute(), mode="rt") if log.ext == ".gz" else log.path.open()
 
     lexer = Lexer(RULES)  # prepare lexemes
 
@@ -128,13 +125,13 @@ def get_requests_lex(log, errors_level: float, entry):
                 field_idx += 1
             try:
                 urls_data[entry.request.split()[1]].append(float(entry.request_time))
-            except Exception:
+            except AttributeError:
                 fails += 1
                 continue
 
     errors = fails / lines * 100
     if errors > errors_level:
-        raise Exception(f"Ahtung! Errors % [{errors}] more than {errors_level}%!")
+        raise ValueError(f"Ahtung! Errors % [{errors}] more than {errors_level}%!")
 
     total_count = 0
     total_time = 0.0
