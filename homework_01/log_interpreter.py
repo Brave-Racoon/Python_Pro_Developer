@@ -97,32 +97,14 @@ def get_requests_lex(log, errors_level: float, entry):
             lines += 1
             try:
                 tokens = lexer(line)
-            except Exception:
+            except ValueError:
                 # logging.exception("Error in line '%s'", line)
                 logger.info("Error in line '%s'", line)
                 fails += 1
                 continue  # fix error and continue
 
-            field_idx = 0
-            for re_match, token_type in tokens:
-                if token_type == WSP:
-                    continue  # ignore spaces
-                elif token_type == NO_DATA:
-                    value = None  # NO_DATA equal None
-                elif token_type == RAW:
-                    value = re_match.group(1)
-                elif token_type == QUOTED_STRING:
-                    value = re_match.group(1)
-                elif token_type == DATE:
-                    value = datetime.datetime.strptime(
-                        re_match.group(1), "%d/%b/%Y:%H:%M:%S %z"
-                    )
-                else:
-                    fails += 1
-                    raise SyntaxError("Unknown token", token_type, re_match)
-                field_name = LogEntry.FIELDS[field_idx]
-                setattr(entry, field_name, value)  # equal to: entry.field_name = value
-                field_idx += 1
+            process_tokens(tokens, entry)
+
             try:
                 urls_data[entry.request.split()[1]].append(float(entry.request_time))
             except AttributeError:
@@ -133,6 +115,38 @@ def get_requests_lex(log, errors_level: float, entry):
     if errors > errors_level:
         raise ValueError(f"Ahtung! Errors % [{errors}] more than {errors_level}%!")
 
+    return calculate_url_stat(urls_data)
+
+
+def process_tokens(tokens, entry):
+    """
+    Process tokens and set attributes of the entry object.
+    """
+    field_idx = 0
+    for re_match, token_type in tokens:
+        if token_type == WSP:
+            continue  # ignore spaces
+        elif token_type == NO_DATA:
+            value = None  # NO_DATA equal None
+        elif token_type == RAW:
+            value = re_match.group(1)
+        elif token_type == QUOTED_STRING:
+            value = re_match.group(1)
+        elif token_type == DATE:
+            value = datetime.datetime.strptime(
+                re_match.group(1), "%d/%b/%Y:%H:%M:%S %z"
+            )
+        else:
+            raise SyntaxError("Unknown token", token_type, re_match)
+        field_name = LogEntry.FIELDS[field_idx]
+        setattr(entry, field_name, value)  # equal to: entry.field_name = value
+        field_idx += 1
+
+
+def calculate_url_stat(urls_data):
+    """
+    Calculate statistics for each URL.
+    """
     total_count = 0
     total_time = 0.0
     for request_times in urls_data.values():
@@ -153,7 +167,6 @@ def get_requests_lex(log, errors_level: float, entry):
                 "time_med": round(statistics.median(request_times), 3),
             }
         )
-
     return stat
 
 
