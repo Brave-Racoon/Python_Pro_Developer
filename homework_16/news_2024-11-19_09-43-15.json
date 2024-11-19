@@ -1,9 +1,0 @@
-[
-    {
-        "title": "Example Title",
-        "url": "https://example.com",
-        "score": "10 points",
-        "comments_link": "item?id=12345",
-        "comment_urls": []
-    }
-]
