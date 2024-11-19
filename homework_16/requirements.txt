@@ -1,0 +1,5 @@
+asyncio
+aiohttp
+bs4
+datetime
+pytest-asyncio

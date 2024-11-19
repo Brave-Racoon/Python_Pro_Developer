@@ -1,0 +1,9 @@
+services:
+  crawler:
+    build: .
+    container_name: HW16
+    volumes:
+      - .:/app
+    command: ["python", "crawler.py"]
+    environment:
+      - PYTHONUNBUFFERED=1
