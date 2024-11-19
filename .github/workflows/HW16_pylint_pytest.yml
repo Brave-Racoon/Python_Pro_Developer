@@ -23,6 +23,6 @@ jobs:
         pip install pytest
     - name: Analysing code with pylint and black
       run: |
-        pylint --disable=C0103,C0114,C0116,C0115 --fail-under=7 ./homework_16/log_interpreter.py
-        black ./homework_16/log_interpreter.py
+        pylint --disable=C0103,C0114,C0116,C0115 --fail-under=7 ./homework_16/crawler.py
+        black ./homework_16/crawler.py
         pytest -v ./homework_16/tests/test_crawler.py
