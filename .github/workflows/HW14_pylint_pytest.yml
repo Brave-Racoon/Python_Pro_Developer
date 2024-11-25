@@ -1,0 +1,28 @@
+name: HW14 Pylint/pytest workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r ./homework_14/requirements.txt
+        pip install black
+        pip install pylint
+        pip install pytest
+    - name: Analysing code with pylint and black
+      run: |
+        pylint --disable=C0103,C0114,C0116,C0115,C0209,C0301,W1201  --fail-under=7 ./homework_14/memc_load_multi.py
+        black ./homework_14/memc_load_multi.py
+        pytest -v ./homework_14/tests/test_memc_load_multi.py
