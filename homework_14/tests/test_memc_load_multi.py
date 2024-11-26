@@ -9,7 +9,7 @@ from optparse import OptionParser
 import sys
 import appsinstalled_pb2
 
-from memc_load_multi import process_file, main, prototest
+from memc_load_multi import process_file, main, prototest, AppsInstalled
 
 
 # Mock dependencies
@@ -29,13 +29,19 @@ def test_process_file(mock_dot_rename, mock_process_line, mock_cpu_count, mock_P
     mock_gzip_open.return_value.__exit__.return_value = False
 
     mock_cpu_count.return_value = 4
-    mock_process_line.side_effect = [True, False]  # Simulate processing results
+    mock_process_line.side_effect = [
+        AppsInstalled("idfa", "1rfw452y52g2gq4g", 55.55, 42.42, [1423, 43, 567, 3, 7, 23]),
+        None  # Simulate processing results
+    ]
 
     # Mock Pool context manager
     mock_pool = MagicMock()
     mock_Pool.return_value.__enter__.return_value = mock_pool
     mock_Pool.return_value.__exit__.return_value = False
-    mock_pool.starmap.return_value = [True, False]  # Simulate the results of starmap
+    mock_pool.starmap.return_value = [
+        AppsInstalled("idfa", "1rfw452y52g2gq4g", 55.55, 42.42, [1423, 43, 567, 3, 7, 23]),
+        None  # Simulate the results of starmap
+    ]
 
     process_file('test_file.gz', {'idfa': '127.0.0.1:33013', 'gaid': '127.0.0.1:33014'}, False)
 
@@ -78,3 +84,4 @@ def test_prototest():
 
 if __name__ == '__main__':
     pytest.main()
+    
