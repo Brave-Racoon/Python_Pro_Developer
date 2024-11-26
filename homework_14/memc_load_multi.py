@@ -12,7 +12,9 @@ import memcache
 import appsinstalled_pb2
 
 NORMAL_ERR_RATE = 0.01
-AppsInstalled = collections.namedtuple("AppsInstalled", ["dev_type", "dev_id", "lat", "lon", "apps"])
+AppsInstalled = collections.namedtuple(
+    "AppsInstalled", ["dev_type", "dev_id", "lat", "lon", "apps"]
+)
 
 
 def dot_rename(path):
@@ -20,27 +22,30 @@ def dot_rename(path):
     os.rename(path, os.path.join(head, "." + fn))
 
 
-def insert_appsinstalled(memc_addr, appsinstalled, dry_run=False):
-    ua = appsinstalled_pb2.UserApps()
-    ua.lat = appsinstalled.lat
-    ua.lon = appsinstalled.lon
-    key = "%s:%s" % (appsinstalled.dev_type, appsinstalled.dev_id)
-    ua.apps.extend(appsinstalled.apps)
-    packed = ua.SerializeToString()
+def insert_appsinstalled(memc, appsinstalled_list, dry_run=False):
+    items = {}
+    for appsinstalled in appsinstalled_list:
+        ua = appsinstalled_pb2.UserApps()
+        ua.lat = appsinstalled.lat
+        ua.lon = appsinstalled.lon
+        key = "%s:%s" % (appsinstalled.dev_type, appsinstalled.dev_id)
+        ua.apps.extend(appsinstalled.apps)
+        packed = ua.SerializeToString()
+        items[key] = packed
+
     try:
         if dry_run:
-            logging.debug("%s - %s -> %s" % (memc_addr, key, str(ua).replace("\n", " ")))
+            for key, packed in items.items():
+                logging.debug("%s - %s -> %s" % (memc.servers[0], key, packed))
         else:
-            memc = memcache.Client([memc_addr])
-            memc.set(key, packed)
-    except Exception as e:
-        logging.exception("Cannot write to memc %s: %s" % (memc_addr, e))
+            memc.set_multi(items)
+    except Exception as exp:
+        logging.exception("Cannot write to memc %s: %s" % (memc.servers[0], exp))
         return False
     return True
 
 
 def parse_appsinstalled(line):
-    #line = line.decode()
     line_parts = line.strip().split("\t")
     if len(line_parts) < 5:
         return
@@ -62,26 +67,26 @@ def parse_appsinstalled(line):
 def process_line(line, device_memc, dry_run):
     appsinstalled = parse_appsinstalled(line)
     if not appsinstalled:
-        return False
+        return None
     memc_addr = device_memc.get(appsinstalled.dev_type)
     if not memc_addr:
         logging.error("Unknown device type: %s" % appsinstalled.dev_type)
-        return False
-    return insert_appsinstalled(memc_addr, appsinstalled, dry_run)
+        return None
+    return appsinstalled
 
 
 def process_file(fn, device_memc, dry_run):
     processed = errors = 0
-    logging.info('Processing %s' % fn)
-    with gzip.open(fn, 'rt') as fd:
+    logging.info("Processing %s" % fn)
+    with gzip.open(fn, "rt") as fd:
         lines = fd.readlines()
-        with Pool(cpu_count()) as pool:
-            results = pool.starmap(process_line, [(line, device_memc, dry_run) for line in lines])
-            for ok in results:
-                if ok:
-                    processed += 1
-                else:
-                    errors += 1
+        memc = memcache.Client([device_memc[line.strip().split("\t")[0]] for line in lines])
+        appsinstalled_list = [process_line(line, device_memc, dry_run) for line in lines]
+        appsinstalled_list = [apps for apps in appsinstalled_list if apps]
+        if insert_appsinstalled(memc, appsinstalled_list, dry_run):
+            processed += len(appsinstalled_list)
+        else:
+            errors += len(appsinstalled_list)
     if not processed:
         dot_rename(fn)
         return
@@ -90,7 +95,9 @@ def process_file(fn, device_memc, dry_run):
     if err_rate < NORMAL_ERR_RATE:
         logging.info("Acceptable error rate (%s). Successful load" % err_rate)
     else:
-        logging.error("High error rate (%s > %s). Failed load" % (err_rate, NORMAL_ERR_RATE))
+        logging.error(
+            "High error rate (%s > %s). Failed load" % (err_rate, NORMAL_ERR_RATE)
+        )
     dot_rename(fn)
 
 
@@ -127,7 +134,7 @@ def prototest():
         assert ua == unpacked
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     op = OptionParser()
     op.add_option("-t", "--test", action="store_true", default=False)
     op.add_option("-l", "--log", action="store", default=None)
@@ -138,8 +145,12 @@ if __name__ == '__main__':
     op.add_option("--adid", action="store", default="127.0.0.1:33015")
     op.add_option("--dvid", action="store", default="127.0.0.1:33016")
     (opts, args) = op.parse_args()
-    logging.basicConfig(filename=opts.log, level=logging.INFO if not opts.dry else logging.DEBUG,
-                        format='[%(asctime)s] %(levelname).1s %(message)s', datefmt='%Y.%m.%d %H:%M:%S')
+    logging.basicConfig(
+        filename=opts.log,
+        level=logging.INFO if not opts.dry else logging.DEBUG,
+        format="[%(asctime)s] %(levelname).1s %(message)s",
+        datefmt="%Y.%m.%d %H:%M:%S",
+    )
     if opts.test:
         prototest()
         sys.exit(0)
