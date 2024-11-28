@@ -43,7 +43,7 @@ def test_process_file(mock_dot_rename, mock_process_line, mock_cpu_count, mock_P
         None  # Simulate the results of starmap
     ]
 
-    process_file('test_file.gz', {'idfa': '127.0.0.1:33013', 'gaid': '127.0.0.1:33014'}, False)
+    process_file('test_file.gz', {'idfa': '127.0.0.1:33013', 'gaid': '127.0.0.1:33014', 'adid': '127.0.0.1:33015', 'dvid': '127.0.0.1:33016'}, False)
 
     # Assertions
     mock_dot_rename.assert_called_once_with('test_file.gz')
