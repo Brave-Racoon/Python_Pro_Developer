@@ -76,17 +76,56 @@ def process_line(line, device_memc, dry_run):
 
 
 def process_file(fn, device_memc, dry_run):
-    processed = errors = 0
+    errors = 0
     logging.info("Processing %s" % fn)
+
+    # Create memcache clients for each device type
+    memc_idfa = memcache.Client([device_memc["idfa"]])
+    memc_gaid = memcache.Client([device_memc["gaid"]])
+    memc_adid = memcache.Client([device_memc["adid"]])
+    memc_dvid = memcache.Client([device_memc["dvid"]])
+
     with gzip.open(fn, "rt") as fd:
         lines = fd.readlines()
-        memc = memcache.Client([device_memc[line.strip().split("\t")[0]] for line in lines])
-        appsinstalled_list = [process_line(line, device_memc, dry_run) for line in lines]
-        appsinstalled_list = [apps for apps in appsinstalled_list if apps]
-        if insert_appsinstalled(memc, appsinstalled_list, dry_run):
-            processed += len(appsinstalled_list)
-        else:
-            errors += len(appsinstalled_list)
+        # Prepare to process appsinstalled_list
+        appsinstalled_list = []
+        for line in lines:
+            appsinstalled = process_line(line, device_memc, dry_run)
+            if appsinstalled:
+                appsinstalled_list.append(appsinstalled)
+
+        # Organize appsinstalled_list by device_type for insert
+        items = {}
+        for appsinstalled in appsinstalled_list:
+            ua = appsinstalled_pb2.UserApps()
+            ua.lat = appsinstalled.lat
+            ua.lon = appsinstalled.lon
+            key = "%s:%s" % (appsinstalled.dev_type, appsinstalled.dev_id)
+            ua.apps.extend(appsinstalled.apps)
+            packed = ua.SerializeToString()
+            items[key] = packed
+
+        memc = {
+            "idfa": memc_idfa,
+            "gaid": memc_gaid,
+            "adid": memc_adid,
+            "dvid": memc_dvid,
+        }
+        succeeded = 0
+
+        # Insert to Memcached based on device type
+        for key, packed in items.items():
+            dev_type = key.split(":")[0]
+            if dev_type in memc:
+                try:
+                    memc[dev_type].set(key, packed)
+                    succeeded += 1
+                except Exception as exp:
+                    logging.exception("Cannot write to memc %s: %s" % (dev_type, exp))
+                    errors += 1
+
+        processed = len(appsinstalled_list)
+
     if not processed:
         dot_rename(fn)
         return
@@ -99,7 +138,6 @@ def process_file(fn, device_memc, dry_run):
             "High error rate (%s > %s). Failed load" % (err_rate, NORMAL_ERR_RATE)
         )
     dot_rename(fn)
-
 
 def main(options):
     device_memc = {
