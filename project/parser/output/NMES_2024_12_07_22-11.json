@@ -1,0 +1,2474 @@
+[
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Радужная",
+        "Number_from": "88",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Вишневая",
+        "Number_from": "51",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "47",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "48",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "65",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "73",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "75",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "276",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "276П",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "280",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "300",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "318",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Малиновая",
+        "Number_from": "64",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Медовая",
+        "Number_from": "79",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Медовая",
+        "Number_from": "86",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "Коллективная",
+        "Number_from": "73",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "Коллективная",
+        "Number_from": "76",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "1",
+        "City": "г. Новочеркасск",
+        "Street": "Коллективная",
+        "Number_from": "80",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "2",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Комитетская",
+        "Number_from": "181",
+        "Number_to": "205",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "2",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Комитетская",
+        "Number_from": "198",
+        "Number_to": "234",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "2",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Первомайская",
+        "Number_from": "54",
+        "Number_to": "58",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "2",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Красноармейская",
+        "Number_from": "133",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "2",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Красноармейская",
+        "Number_from": "133А",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "3",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пушкинская",
+        "Number_from": "2",
+        "Number_to": "12",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "3",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пушкинская",
+        "Number_from": "1",
+        "Number_to": "11",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "3",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пушкинская",
+        "Number_from": "15",
+        "Number_to": "29",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "3",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Кавказская",
+        "Number_from": "191",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "3",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Кавказская",
+        "Number_from": "168",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "3",
+        "City": "г. Новочеркасск",
+        "Street": "ул.Аксайская",
+        "Number_from": "88",
+        "Number_to": "150",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "3",
+        "City": "г. Новочеркасск",
+        "Street": "ул.Аксайская",
+        "Number_from": "81",
+        "Number_to": "127",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "4",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Б. Хмельницкого",
+        "Number_from": "37",
+        "Number_to": "49",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "4",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Б. Хмельницкого",
+        "Number_from": "32",
+        "Number_to": "48",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "4",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Энергетическая",
+        "Number_from": "5",
+        "Number_to": "11",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "4",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Энергетическая",
+        "Number_from": "2",
+        "Number_to": "8",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "4",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Платовский",
+        "Number_from": "73",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "4",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Платовский",
+        "Number_from": "75",
+        "Number_to": "",
+        "Date_from": "09.12.24"
+    },
+    {
+        "Nn": "9",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Кирпичная",
+        "Number_from": "29",
+        "Number_to": "67",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "9",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Кирпичная",
+        "Number_from": "26",
+        "Number_to": "74",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "9",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Александровская",
+        "Number_from": "124",
+        "Number_to": "130",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "9",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Александровская",
+        "Number_from": "181",
+        "Number_to": "193",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "9",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Забронского",
+        "Number_from": "1",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "9",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Платовский",
+        "Number_from": "87",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "9",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Платовский",
+        "Number_from": "89",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "10",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Баклановский",
+        "Number_from": "19",
+        "Number_to": "47",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "10",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Энгельса",
+        "Number_from": "1",
+        "Number_to": "7",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "11",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Баклановский",
+        "Number_from": "55",
+        "Number_to": "75",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Серафимовича",
+        "Number_from": "15",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Серафимовича",
+        "Number_from": "17",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Серафимовича",
+        "Number_from": "25",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Серафимовича",
+        "Number_from": "16",
+        "Number_to": "26",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Каштанова",
+        "Number_from": "20",
+        "Number_to": "40",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Каштанова",
+        "Number_from": "35",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Токарева",
+        "Number_from": "41",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Токарева",
+        "Number_from": "44",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Толбухина",
+        "Number_from": "28",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Толбухина",
+        "Number_from": "30",
+        "Number_to": "",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "12",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Чехова",
+        "Number_from": "21",
+        "Number_to": "31",
+        "Date_from": "10.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Маяковского",
+        "Number_from": "38",
+        "Number_to": "58",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Маяковского",
+        "Number_from": "39",
+        "Number_to": "47",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Грекова",
+        "Number_from": "80",
+        "Number_to": "96",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Грекова",
+        "Number_from": "77",
+        "Number_to": "121",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Просвещения",
+        "Number_from": "56",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Просвещения",
+        "Number_from": "57А",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Просвещения",
+        "Number_from": "59",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "14",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Фрунзе",
+        "Number_from": "84",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "15",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Заречная",
+        "Number_from": "41",
+        "Number_to": "67",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "15",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Заречная",
+        "Number_from": "46",
+        "Number_to": "78",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "15",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Огинского",
+        "Number_from": "59",
+        "Number_to": "87",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Привокзальная",
+        "Number_from": "46",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Привокзальная",
+        "Number_from": "48",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калинина",
+        "Number_from": "8Д",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Чкалова",
+        "Number_from": "37",
+        "Number_to": "71",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Чкалова",
+        "Number_from": "38",
+        "Number_to": "72",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Чкалова",
+        "Number_from": "42А",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Молодежная",
+        "Number_from": "6А",
+        "Number_to": "10Б",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Молодежная",
+        "Number_from": "7А",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Молодежная",
+        "Number_from": "11А",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Мацоты",
+        "Number_from": "17/76",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Гвардейская",
+        "Number_from": "41",
+        "Number_to": "67",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Гвардейская",
+        "Number_from": "76",
+        "Number_to": "92",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Большой",
+        "Number_from": "3",
+        "Number_to": "49",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "16",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Большой",
+        "Number_from": "4",
+        "Number_to": "26",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Буденновская",
+        "Number_from": "203/2",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Буденновская",
+        "Number_from": "231",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Буденновская",
+        "Number_from": "233",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Буденновская",
+        "Number_from": "235",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Буденновская",
+        "Number_from": "237",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Буденновская",
+        "Number_from": "237/2",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Магнитный",
+        "Number_from": "6",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Магнитный",
+        "Number_from": "8",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Магнитный",
+        "Number_from": "10",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "17",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Магнитный",
+        "Number_from": "12",
+        "Number_to": "",
+        "Date_from": "11.12.24"
+    },
+    {
+        "Nn": "20",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ленгника",
+        "Number_from": "1",
+        "Number_to": "35",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "20",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ленгника",
+        "Number_from": "2",
+        "Number_to": "32",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "20",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Баклановский",
+        "Number_from": "30",
+        "Number_to": "56",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "21",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Щорса",
+        "Number_from": "3",
+        "Number_to": "13",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "21",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Щорса",
+        "Number_from": "6",
+        "Number_to": "20",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "21",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Криничный",
+        "Number_from": "2",
+        "Number_to": "26",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "21",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Криничный",
+        "Number_from": "1",
+        "Number_to": "19",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "21",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Добролюбова",
+        "Number_from": "1",
+        "Number_to": "23",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Тополиная",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "88",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "94",
+        "Number_to": "126",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "148",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "3 у",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "172",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "191",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Малиновая",
+        "Number_from": "3",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Малиновая",
+        "Number_from": "11",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Малиновая",
+        "Number_from": "34",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "6 у",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "174",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "169",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Мелиоратор уч.",
+        "Number_from": "169",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Мелиоратор уч.",
+        "Number_from": "174",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Янтарный",
+        "Number_from": "1",
+        "Number_to": "5",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Янтарный",
+        "Number_from": "20",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Янтарный",
+        "Number_from": "42",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Электрон уч.",
+        "Number_from": "4",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Электрон уч.",
+        "Number_from": "16",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Электрон уч.",
+        "Number_from": "33",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Электрон уч.",
+        "Number_from": "50",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Электрон уч.",
+        "Number_from": "59",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "6",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "20",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "26",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Летний",
+        "Number_from": "7",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "11 у",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "6",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "11",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Шестая",
+        "Number_from": "6",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Шестая",
+        "Number_from": "8",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Шестая",
+        "Number_from": "11",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Шестая",
+        "Number_from": "11А",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Спасский",
+        "Number_from": "3",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Спасский",
+        "Number_from": "4",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Спасский",
+        "Number_from": "10",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Спасский",
+        "Number_from": "36",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СНТ",
+        "Number_from": "9",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Изобильная",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Первая линия",
+        "Number_from": "78",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ароматная",
+        "Number_from": "5",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ароматная",
+        "Number_from": "9",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ароматная",
+        "Number_from": "2А",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "Ореховая",
+        "Number_from": "1",
+        "Number_to": "41",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "Ореховая",
+        "Number_from": "2",
+        "Number_to": "40",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ященко",
+        "Number_from": "39",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ященко",
+        "Number_from": "47",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ященко",
+        "Number_from": "68 А",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Ященко",
+        "Number_from": "59",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "",
+        "Number_to": "4 Ми",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "68",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "84",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "103",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "104",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "86",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "111",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "109",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ ДОСЛ",
+        "Number_from": "194",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Седьмая",
+        "Number_from": "142",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Первая",
+        "Number_from": "9",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Первая",
+        "Number_from": "14",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "16А",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "16Б",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "19",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "23",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "27",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "29",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "33",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Облепиховая",
+        "Number_from": "35",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Баклановский",
+        "Number_from": "121Е",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Баклановский",
+        "Number_from": "121Ж",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Баклановский",
+        "Number_from": "123",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "46",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "66",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Окружной",
+        "Number_from": "6",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Окружной",
+        "Number_from": "19",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Окружной",
+        "Number_from": "33",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Окружной",
+        "Number_from": "40",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Окружной",
+        "Number_from": "58/20",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Вторая",
+        "Number_from": "22",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Вторая",
+        "Number_from": "27",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Вторая",
+        "Number_from": "30",
+        "Number_to": "34",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Одиннадцатая",
+        "Number_from": "231",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Двенадцатая",
+        "Number_from": "190",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Двадцатая",
+        "Number_from": "294",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ДОСЛ",
+        "Number_from": "",
+        "Number_to": "4 у",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ДОСЛ",
+        "Number_from": "212",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СТ Донские зори",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "СНТ Надежда",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "22",
+        "City": "г. Новочеркасск",
+        "Street": "ДНТ Надежда",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "7",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "49",
+        "Number_to": "51",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "59",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "50",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "56",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "62",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "70",
+        "Number_to": "74",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Третья",
+        "Number_from": "71",
+        "Number_to": "77",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Четвертая",
+        "Number_from": "4",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Четвертая",
+        "Number_from": "5",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Четвертая",
+        "Number_from": "17",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Четвертая",
+        "Number_from": "25",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Четвертая",
+        "Number_from": "27",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Четвертая",
+        "Number_from": "42",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Четвертая",
+        "Number_from": "43",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Мацоты",
+        "Number_from": "50",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Чистый",
+        "Number_from": "2",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Чистый",
+        "Number_from": "19",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Чистый",
+        "Number_from": "23 А",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Чистый",
+        "Number_from": "25",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Центральная",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "22 По",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "СТ",
+        "Number_from": "2",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пятая",
+        "Number_from": "3",
+        "Number_to": "11",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пятая",
+        "Number_from": "4",
+        "Number_to": "10",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пятая",
+        "Number_from": "14",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пятая",
+        "Number_from": "16",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Вторая",
+        "Number_from": "108",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Высоковольтная",
+        "Number_from": "15Б",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Высоковольтная",
+        "Number_from": "15Г",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Высоковольтная",
+        "Number_from": "15Д",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Высоковольтная",
+        "Number_from": "17Г",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Неглинная",
+        "Number_from": "17",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Флерова",
+        "Number_from": "19",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "23",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Флерова",
+        "Number_from": "23",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Омский",
+        "Number_from": "2",
+        "Number_to": "10",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Сибирский",
+        "Number_from": "1",
+        "Number_to": "9",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Сибирский",
+        "Number_from": "8",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Казачья",
+        "Number_from": "1",
+        "Number_to": "3",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Казачья",
+        "Number_from": "2",
+        "Number_to": "4",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Казачья",
+        "Number_from": "7",
+        "Number_to": "9",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Казачья",
+        "Number_from": "10",
+        "Number_to": "14 А",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Казачья",
+        "Number_from": "11",
+        "Number_to": "45",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Казачья",
+        "Number_from": "22",
+        "Number_to": "34А",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Уютный",
+        "Number_from": "3",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Уютный",
+        "Number_from": "2",
+        "Number_to": "12",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "2",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "4",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "8",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "18",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "24",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "30",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "32",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "17",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "17 А",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калиновая",
+        "Number_from": "49",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Окольная",
+        "Number_from": "7",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Светлая",
+        "Number_from": "22",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Цветочная",
+        "Number_from": "1",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Цветочная",
+        "Number_from": "9",
+        "Number_to": "29",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Цветочная",
+        "Number_from": "2 А",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Цветочная",
+        "Number_from": "8",
+        "Number_to": "14",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Привольная",
+        "Number_from": "1",
+        "Number_to": "11",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Привольная",
+        "Number_from": "2",
+        "Number_to": "8",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Рубежная",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Центральная",
+        "Number_from": "7",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Центральная",
+        "Number_from": "8",
+        "Number_to": "14",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Виноградная",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Полевая",
+        "Number_from": "1",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Полевая",
+        "Number_from": "2",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Полевая",
+        "Number_from": "3",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Полевая",
+        "Number_from": "4",
+        "Number_to": "",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "24",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Коммунальная",
+        "Number_from": "3",
+        "Number_to": "11",
+        "Date_from": "12.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Пионерский",
+        "Number_from": "3",
+        "Number_to": "29",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Пионерский",
+        "Number_from": "2",
+        "Number_to": "32",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Платовский",
+        "Number_from": "7",
+        "Number_to": "31",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Никольского",
+        "Number_from": "1",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Никольского",
+        "Number_from": "1А",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Никольского",
+        "Number_from": "1Б",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Никольского",
+        "Number_from": "1В",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "30",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Володарского",
+        "Number_from": "80",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "31",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Калмыкова",
+        "Number_from": "",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "31",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Железнодорожная",
+        "Number_from": "23",
+        "Number_to": "93 Г",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "31",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Железнодорожная",
+        "Number_from": "131",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "31",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Путиловский",
+        "Number_from": "1",
+        "Number_to": "29",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "31",
+        "City": "г. Новочеркасск",
+        "Street": "пер. Путиловский",
+        "Number_from": "2",
+        "Number_to": "38/4",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "31",
+        "City": "г. Новочеркасск",
+        "Street": "спуск Красный",
+        "Number_from": "4/38",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "31",
+        "City": "г. Новочеркасск",
+        "Street": "спуск Красный",
+        "Number_from": "6",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "32",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Александровская",
+        "Number_from": "101",
+        "Number_to": "109",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "32",
+        "City": "г. Новочеркасск",
+        "Street": "сп. Разина",
+        "Number_from": "15",
+        "Number_to": "25",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "32",
+        "City": "г. Новочеркасск",
+        "Street": "сп. Разина",
+        "Number_from": "24",
+        "Number_to": "30",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "32",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Кавказская",
+        "Number_from": "138",
+        "Number_to": "144",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "32",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Кавказская",
+        "Number_from": "153",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "32",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Аксайская",
+        "Number_from": "144",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Радужная",
+        "Number_from": "88",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Вишневая",
+        "Number_from": "51",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "47",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "48",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "65",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "73",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "75",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "276",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "276П",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "280",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "300",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Сарматская",
+        "Number_from": "318",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Малиновая",
+        "Number_from": "64",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Медовая",
+        "Number_from": "79",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Медовая",
+        "Number_from": "86",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "Коллективная",
+        "Number_from": "73",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "Коллективная",
+        "Number_from": "76",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "33",
+        "City": "г. Новочеркасск",
+        "Street": "Коллективная",
+        "Number_from": "80",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "36",
+        "City": "г. Новочеркасск",
+        "Street": "просп. Парковый",
+        "Number_from": "1",
+        "Number_to": "5",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "36",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пляжная",
+        "Number_from": "9",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "36",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Пляжная",
+        "Number_from": "13",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "36",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Энергетиков",
+        "Number_from": "4",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "36",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Энергетиков",
+        "Number_from": "8",
+        "Number_to": "",
+        "Date_from": "13.12.24"
+    },
+    {
+        "Nn": "36",
+        "City": "г. Новочеркасск",
+        "Street": "ул. Терешковой",
+        "Number_from": "2",
+        "Number_to": "6",
+        "Date_from": "13.12.24"
+    }
+]
