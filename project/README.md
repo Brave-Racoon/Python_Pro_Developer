@@ -27,7 +27,7 @@
 - ORM - SQLAlchemy
 - Управление миграциями БД - Alembic
 - Telegram-bot - AIOgram
-- Memcashe - Redis
+- Memcache - Redis
   
 Рисунок ниже иллюстрирует схему взаимодействия:  
 
