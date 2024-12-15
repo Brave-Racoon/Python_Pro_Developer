@@ -1,14 +1,12 @@
+
+import asyncio
 import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
-from aiogram.contrib.middlewares.logging import LoggingMiddleware
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.types import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils import executor
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
-from aiogram.dispatcher.filters import Text
-from aiogram.types import Message
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.future import select
@@ -17,9 +15,18 @@ from sqlalchemy import func, and_
 from datetime import date
 from dotenv import load_dotenv
 import os
+import redis.asyncio as aioredis
+from urllib.parse import quote
+
+# Import SQLAlchemy models
+from models.models import User, UserAddresses, Address, Street, Blackout, UserNotify
 
 # Initialize logging
 logging.basicConfig(level=logging.INFO)
+# Define ANSI escape sequences for colors
+GREEN = "\033[92m"
+RESET = "\033[0m"
+
 # Load config
 load_dotenv('config.env')
 # Setup config
@@ -37,6 +44,7 @@ storage = RedisStorage2(
     db=redis_db,
     password=redis_password
 )
+
 # Setup Telegram API
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=storage)
@@ -47,13 +55,25 @@ async_session = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession
 # Register DB builtin function
 is_within_range = func.is_within_range
 
-# Import SQLAlchemy models
-from models.models import User, UserAddresses, Address, Street, Blackout, UserNotify
-
 
 # States for FSM
 class Form(StatesGroup):
     address = State()
+
+
+redis_settings = {
+    'host': os.getenv('REDIS_HOST'),
+    'port': int(os.getenv('REDIS_PORT')),
+    'db': int(os.getenv('REDIS_DB')),
+    'password': os.getenv('REDIS_PASSWORD')
+}
+
+# Construct the Redis URL
+# redis://[:password]@host:port/db
+password_part = quote(redis_settings['password']) if redis_settings['password'] else ""
+redis_url = f"redis://:{password_part}@{redis_settings['host']}:{redis_settings['port']}/{redis_settings['db']}"
+
+r = aioredis.from_url(redis_url)
 
 
 # Helper function to get or create a user
@@ -71,7 +91,7 @@ async def get_or_create_user(session, user_tg_id, user_name):
 # Start command handler
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
-    await message.answer("Welcome! Используйте команду /add для добавления адресов.")
+    await message.answer("Welcome! Используйте команду /add или меню для добавления адресов.")
 
 
 # Help command handler
@@ -103,23 +123,14 @@ async def process_address(message: types.Message, state: FSMContext):
                 select(func.count()).select_from(UserAddresses).filter_by(user_id=user.id))
             existing_addresses_count = existing_addresses_count.scalar()
             if existing_addresses_count >= 5:
-                await message.answer("🚫 Можно добавить не более 5 адресов.")
+                await message.answer("⛔️ Можно добавить не более 5 адресов.")
                 return
 
             new_address = UserAddresses(street=street, number=number, user_id=user.id)
             session.add(new_address)
             await session.commit()
             await message.answer(f"✅ Адрес добавлен: {street}, {number}")
-
-            # Check for blackouts and send notification for added address
-            blackouts_list = await check_for_blackouts(user.id)
-            if blackouts_list:
-                for blackout in blackouts_list:
-                    await bot.send_message(
-                        chat_id=blackout['user_tg_id'],
-                        text=f"🚨🚨🚨 *Найдено плановое отключение:*\nУлица: {blackout['street']}, {blackout['number_from']}-{blackout['number_to']}\nДата: {blackout['blackout_day']}",
-                        parse_mode=ParseMode.MARKDOWN
-                    )
+            await find_blackouts(user.id)
         except SQLAlchemyError as e:
             await message.answer(f"❌ Ошибка: {e}")
         finally:
@@ -240,6 +251,72 @@ async def check_for_blackouts(user_id):
     return blackouts_list
 
 
+async def find_blackouts(user_id=None):
+    async with async_session() as session:
+        try:
+            if user_id:
+                # Check blackouts for particular user
+                users = [await session.get(User, user_id)]
+            else:
+                # Check blackouts for all users
+                users = await session.execute(select(User))
+                users = users.scalars().all()
+
+            for user in users:
+                blackouts_list = await check_for_blackouts(user.id)
+                if blackouts_list:
+                    # Prepare message for the user
+                    messages = []
+                    for blackout in blackouts_list:
+                        messages.append(
+                            f"🚧 {blackout['street']}, {blackout['number_from']}{' - ' + blackout['number_to'] if blackout['number_to'] else ''} Дата: {blackout['blackout_day']}")
+
+                    # Join all blackouts to a Telegram message and send
+                    full_message = "🚨🚨🚨 *Найдено плановое отключение:*\n" + "\n".join(messages)
+                    await bot.send_message(
+                        chat_id=blackout['user_tg_id'],
+                        text=full_message,
+                        parse_mode=ParseMode.MARKDOWN
+                    )
+        except SQLAlchemyError as e:
+            logging.error(f"❌ Ошибка: {e}")
+
+
+# Redis Pub/Sub
+async def listen_redis():
+    pubsub = r.pubsub()
+    await pubsub.subscribe('ch_parser')
+
+    try:
+        async for message in pubsub.listen():
+            if message['type'] == 'message':
+                await handle_message(message['data'])
+    except asyncio.CancelledError:
+        pass
+    finally:
+        await pubsub.unsubscribe('ch_parser')
+        await pubsub.aclose()
+
+
+async def handle_message(data):
+    # Process the incoming message
+    logging.info(f"{GREEN}Received message: {data.decode('utf-8')}{RESET}")
+    # await bot.send_message(chat_id='ID', text=data.decode('utf-8'))  # For test send msg to me
+    await find_blackouts()
+
+
+async def on_startup(dp):
+    # Start listening to Redis in the background
+    dp['redis_task'] = asyncio.create_task(listen_redis())
+
+
+async def on_shutdown(dp):
+    # Cancel the Redis task on shutdown
+    dp['redis_task'].cancel()
+    await dp['redis_task']
+    await r.aclose()
+
+
 # Start the bot
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    executor.start_polling(dp, on_startup=on_startup, on_shutdown=on_shutdown, skip_updates=True)
