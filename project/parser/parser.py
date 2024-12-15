@@ -1,19 +1,36 @@
-#https://regex101.com/
+# https://regex101.com/
 
-import os
 import requests
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 import re
 import io
-
 from sqlalchemy import create_engine
 from sqlalchemy.exc import OperationalError
-from sqlalchemy.orm import sessionmaker, create_session
+from sqlalchemy.orm import sessionmaker
 
-from informant_bot.models.models import User, UserAddresses, UserNotify, Street, Address, Blackout
-from informant_bot.config import Config
+from informant_bot.models.models import Street, Address, Blackout
+from dotenv import load_dotenv
+import os
+import logging
+import redis
+
+# Load config
+load_dotenv('../informant_bot/config.env')
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+
+# Setup config
+DATABASE_URL = os.getenv('DATABASE_URI')
+# Redis settings
+redis_settings = {
+    'host': os.getenv('REDIS_HOST'),
+    'port': int(os.getenv('REDIS_PORT')),
+    'database': int(os.getenv('REDIS_DB')),
+    'password': os.getenv('REDIS_PASSWORD')
+}
 
 
 def split_string(nn: str, city: str, string4split: str, dateoff: str) -> list:
@@ -35,6 +52,7 @@ def split_string(nn: str, city: str, string4split: str, dateoff: str) -> list:
     matches = re.findall(pattern, string4split)
     output_dict['Nn'] = nn
     output_dict['City'] = city
+
     output_dict['Street'] = matches[0][0].strip(' ')
     output_dict[numbers_headers_list[0]] = ''
     output_dict[numbers_headers_list[1]] = ''
@@ -49,6 +67,7 @@ def split_string(nn: str, city: str, string4split: str, dateoff: str) -> list:
                 data.append(output_dict.copy())
         elif digit_part:  # parse digit-part and add records
             digit_part = digit_part.strip(' ')
+            digit_part = digit_part.replace(" ", "")
             dig_part_split_list = digit_part.split('-')
             if 0 < len(dig_part_split_list) < 3:
                 for i, item in enumerate(dig_part_split_list):
@@ -71,7 +90,7 @@ def check_json_folder_exists(folder: str) -> str:
 
 def affect_blackout_recs(table_to_affect, session_) -> bool:
     """Delete all records from the table_to_affect."""
-    #session = create_session()
+
     try:
         # Check if the table has any records
         record_count = session.query(table_to_affect).count()
@@ -113,6 +132,9 @@ def add_blackouts(blackouts_list: list, session_):
 
 
 if __name__ == "__main__":
+
+    r = redis.Redis(host=redis_settings.get('host'), port=redis_settings.get('port'),
+                    db=redis_settings.get('database'), password=redis_settings.get('password'))
 
     try:
         to_unicode = unicode
@@ -159,10 +181,11 @@ if __name__ == "__main__":
                           indent=4, sort_keys=False,
                           separators=(',', ': '), ensure_ascii=False)
         outfile.write(to_unicode(str_))
+
     print('JSON ready.')
 
     # Prepare to load data to DB
-    engine = create_engine(Config.SQLALCHEMY_DATABASE_URI)
+    engine = create_engine(DATABASE_URL)
     Session = sessionmaker(bind=engine)
     session = Session()
     try:
@@ -171,6 +194,7 @@ if __name__ == "__main__":
         print("Connection to the database established successfully.")
         if affect_blackout_recs(Street, session):
             add_blackouts(data, session)
+            r.publish('ch_parser', 'data_ready')
     except OperationalError as e:
         print(f"Error connecting to the database: {e}")
     finally:
