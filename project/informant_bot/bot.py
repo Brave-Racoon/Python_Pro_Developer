@@ -190,6 +190,7 @@ async def process_delete_address(callback_query: types.CallbackQuery):
                 await callback_query.message.answer(f"✅ Адрес удален: {address.street}, {address.number}")
             else:
                 await callback_query.message.answer("❌ Адрес не найден.")
+            await bot.answer_callback_query(callback_query.id)    
         except SQLAlchemyError as e:
             await callback_query.message.answer(f"❌ Ошибка: {e}")
 
