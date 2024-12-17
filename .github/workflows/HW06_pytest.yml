@@ -1,0 +1,29 @@
+name: HW_06 Tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install black
+        pip install pylint
+	pip install pytest
+        pip install -r ./homework_06/warehouse_management/requirements.txt
+    - name: Testing workout
+      run: |
+        pylint --disable=C0103,C0114,C0116,C0115 --fail-under=7 ./homework_06/warehouse_management/*.py
+        black ./homework_06/warehouse_management/*.py
+	pytest homework_06/warehouse_management/tests/test_infrastructure/test_orm.py
+        pytest homework_06/warehouse/management/tests/test_domain/test_services.py	
