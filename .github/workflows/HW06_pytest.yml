@@ -26,5 +26,5 @@ jobs:
       run: |
         pylint --disable=C0103,C0114,C0116,C0115 --fail-under=7 ./homework_06/warehouse_management/*.py
         black ./homework_06/warehouse_management/*.py
-        pytest homework_06/warehouse_management/tests/test_infrastructure/test_orm.py
-        pytest homework_06/warehouse/management/tests/test_domain/test_services.py	
+        pytest ./homework_06/warehouse_management/tests/test_infrastructure/test_orm.py
+        pytest ./homework_06/warehouse/management/tests/test_domain/test_services.py	
