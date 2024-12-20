@@ -58,4 +58,6 @@ jobs:
         protoc -I . --python_out=. deviceapps.proto
 
     - name: Run tests
-      run: python3.8 /tmp/otus/setup.py test
+      run: |
+        cd /tmp/otus
+        python3.8 setup.py test
