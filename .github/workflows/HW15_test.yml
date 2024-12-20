@@ -26,7 +26,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        yum install -y gcc make protobuf protobuf-c protobuf-c-compiler protobuf-c-devel python3-devel python3-setuptools gdb zlib-devel epel-release
+        yum install -y gcc make protobuf protobuf-c protobuf-c-compiler protobuf-c-devel python38-devel python3-setuptools gdb zlib-devel
 
     - name: Set ulimit
       run: ulimit -c unlimited
@@ -44,13 +44,7 @@ jobs:
         cp ./homework_15/start.sh /tmp/otus/
         cp ./homework_15/tests/__init__.py /tmp/otus/tests/
         cp ./homework_15/tests/test_pb.py /tmp/otus/tests/
-    
-    - name: List files in /tmp/otus
-      run: ls -la /tmp/otus
-
-    - name: List files in /tmp/otus/tests
-      run: ls -la /tmp/otus/tests
-    
+      
     - name: Compile protobuf
       run: |
         cd /tmp/otus
@@ -59,6 +53,12 @@ jobs:
         protoc-c --c_out=. deviceapps.proto
         protoc -I . --python_out=. deviceapps.proto
 
+    - name: List files in /tmp/otus
+      run: ls -la /tmp/otus
+
+    - name: List files in /tmp/otus/tests
+      run: ls -la /tmp/otus/tests
+    
     - name: Run tests
       run: |
         cd /tmp/otus
