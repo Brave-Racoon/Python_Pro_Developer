@@ -56,13 +56,14 @@ jobs:
         ls -la /tmp/otus
         ls -la /tmp/otus/tests
         
-    - name: Create venv and run tests
+    - name: Create venv, install dependencies, and run tests
       run: |
         cd /tmp/otus
         python3 -m venv venv
         source venv/bin/activate
         yum install -y zlib-devel
-        pip install google
+        pip install --upgrade pip  # Upgrade pip to the latest version
+        pip install google-auth  # Correct package name for google-auth
         pip install protobuf==3.20.*
         python3.8 -m pip list  # List installed packages to verify
         python3.8 setup.py test
