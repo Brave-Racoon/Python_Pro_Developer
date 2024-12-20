@@ -1,0 +1,49 @@
+name: HW15 Tests workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: centos:8
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update yum repos
+      run: |
+        sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/CentOS-*.repo
+        sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/CentOS-*.repo
+        sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/CentOS-*.repo
+
+    - name: Install dependencies
+      run: |
+        yum install -y gcc make protobuf protobuf-c protobuf-c-compiler protobuf-c-devel python38-devel python3-setuptools gdb
+
+    - name: Set ulimit
+      run: ulimit -c unlimited
+
+    - name: Create necessary directory
+      run: mkdir -p /tmp/otus
+
+    - name: Copy necessary files
+      run: |
+        cp deviceapps.proto /tmp/otus/
+        cp setup.py /tmp/otus/
+
+    - name: Compile protobuf
+      run: |
+        cd /tmp/otus
+        protoc-c --c_out=. deviceapps.proto
+        protoc -I . --python_out=. deviceapps.proto
+
+    - name: Run tests
+      run: python3.8 /tmp/otus/setup.py test
