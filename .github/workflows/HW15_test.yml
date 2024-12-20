@@ -26,7 +26,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        yum install -y gcc make protobuf protobuf-c protobuf-c-compiler protobuf-c-devel python38-devel python3-setuptools gdb
+        yum install -y gcc make protobuf protobuf-c protobuf-c-compiler protobuf-c-devel python38-devel python3-setuptools gdb zlib-devel
 
     - name: Set ulimit
       run: ulimit -c unlimited
