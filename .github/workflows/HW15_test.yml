@@ -32,12 +32,18 @@ jobs:
       run: ulimit -c unlimited
 
     - name: Create necessary directory
-      run: mkdir -p /tmp/otus
+      run: |
+        mkdir -p /tmp/otus
+        mkdir -p /tmp/otus/tests
 
     - name: Copy necessary files
       run: |
-        cp deviceapps.proto /tmp/otus/
-        cp setup.py /tmp/otus/
+        cp ./homework_15/deviceapps.proto /tmp/otus/
+        cp ./homework_15/setup.py /tmp/otus/
+        cp ./homework_15/pb.c /tmp/otus/
+        cp ./homework_15/start.sh /tmp/otus/
+        cp ./homework_15/tests/__init__.py /tmp/otus/tests/
+        cp ./homework_15/tests/test_pb.py /tmp/otus/tests/
 
     - name: Compile protobuf
       run: |
