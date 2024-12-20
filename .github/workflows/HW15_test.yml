@@ -63,9 +63,10 @@ jobs:
         source venv/bin/activate
         yum install -y zlib-devel
         pip install --upgrade pip  # Upgrade pip to the latest version
-        pip install google-auth  # Correct package name for google-auth
-        pip install protobuf==3.20.*
-        python3.8 -m pip list  # List installed packages to verify
-        python3.8 setup.py test
+        pip install google-auth  # Install google-auth
+        pip install protobuf==3.20.*  # Install protobuf
+        pip install -e .  # Install the package in editable mode if applicable
+        python3 -m pip list  # List installed packages to verify
+        python3 setup.py test  # Run tests
       shell: bash
       
