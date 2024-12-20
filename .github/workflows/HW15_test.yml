@@ -60,4 +60,7 @@ jobs:
     - name: Run tests
       run: |
         cd /tmp/otus
+        python3 -m venv venv
+        source venv/bin/activate
+        python3 -m pip install protobuf==3.20.*
         python3.8 setup.py test
