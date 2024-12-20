@@ -38,10 +38,10 @@ yum install -y  gcc \
 				python3-setuptools \
 				gdb 
 
-ulimit -c unlimited
-cd /tmp/otus/
-protoc-c --c_out=. deviceapps.proto
-protoc -I . --python_out=. deviceapps.proto
+ulimit -c unlimited  
+cd /tmp/otus/  
+protoc-c --c_out=. deviceapps.proto  
+protoc -I . --python_out=. deviceapps.proto  
 python3.8 setup.py test
 
 
