@@ -64,6 +64,7 @@ jobs:
         yum install -y zlib-devel
         pip install google
         pip install protobuf==3.20.*
+        python3.8 -m pip list  # List installed packages to verify
         python3.8 setup.py test
       shell: bash
       
