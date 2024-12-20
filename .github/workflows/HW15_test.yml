@@ -52,15 +52,18 @@ jobs:
         protoc -I . --python_out=. deviceapps.proto
 
     - name: List files in /tmp/otus
-      run: ls -la /tmp/otus
-
-    - name: List files in /tmp/otus/tests
-      run: ls -la /tmp/otus/tests
-    
-    - name: Run tests
+      run: |
+        ls -la /tmp/otus
+        ls -la /tmp/otus/tests
+        
+    - name: Create venv
       run: |
         cd /tmp/otus
         python3 -m venv venv
         source venv/bin/activate
         python3 -m pip install protobuf==3.20.*
+    
+    - name: Run tests
+      run: |
+        cd /tmp/otus
         python3.8 setup.py test
