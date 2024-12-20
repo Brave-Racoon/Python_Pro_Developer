@@ -44,7 +44,13 @@ jobs:
         cp ./homework_15/start.sh /tmp/otus/
         cp ./homework_15/tests/__init__.py /tmp/otus/tests/
         cp ./homework_15/tests/test_pb.py /tmp/otus/tests/
+    
+    - name: List files in /tmp/otus
+      run: ls -la /tmp/otus
 
+    - name: List files in /tmp/otus/tests
+      run: ls -la /tmp/otus/tests
+    
     - name: Compile protobuf
       run: |
         cd /tmp/otus
