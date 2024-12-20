@@ -61,10 +61,10 @@ jobs:
         cd /tmp/otus
         python3 -m venv venv
         source venv/bin/activate
+        yum install -y zlib-devel
         pip install google
         pip install protobuf==3.20.*
-        yum install -y zlib-devel
-        
+                
     - name: Run tests
       run: |
         cd /tmp/otus
