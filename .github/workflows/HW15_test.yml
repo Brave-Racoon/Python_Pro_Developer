@@ -48,8 +48,6 @@ jobs:
     - name: Compile protobuf
       run: |
         cd /tmp/otus
-        pip3 install protoc
-        pip3 install google
         protoc-c --c_out=. deviceapps.proto
         protoc -I . --python_out=. deviceapps.proto
 
