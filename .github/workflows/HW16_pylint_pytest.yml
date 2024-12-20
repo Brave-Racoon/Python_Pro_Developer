@@ -25,4 +25,4 @@ jobs:
       run: |
         pylint --disable=C0103,C0114,C0116,C0115 --fail-under=7 ./homework_16/crawler.py
         black ./homework_16/crawler.py
-        pytest -v ./homework_16/tests/test_crawler.py
+        pytest -v ./homework_16/tests/crawler.py
